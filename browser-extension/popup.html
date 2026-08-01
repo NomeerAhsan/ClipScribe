@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClipScribe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>ClipScribe</h1>
+        <p>Highlight the web. Build your research document.</p>
+      </header>
+
+      <label class="toggle">
+        <input type="checkbox" id="enabled" checked />
+        <span>Capture highlights</span>
+      </label>
+
+      <label>
+        Backend URL
+        <input type="url" id="backendUrl" value="http://127.0.0.1:8765" />
+      </label>
+
+      <button id="save">Save settings</button>
+      <button id="check" class="secondary">Check connection</button>
+
+      <p id="hint" class="hint">
+        After installing or updating, refresh any open tabs before highlighting.
+      </p>
+      <p id="status" class="status">Ready</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
